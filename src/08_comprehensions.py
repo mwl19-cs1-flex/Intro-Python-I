@@ -48,6 +48,10 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
+
+## Reflect
+# TypeError: not all arguments converted during string formatting
+# This means that i is currently a string and you cant do math on a string
 y = [int(i) for i in x if int(i) % 2 == 0]
 
 print(y)
