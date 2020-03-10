@@ -34,11 +34,23 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 
 # Write a function `print_tuple` that prints all the values in a tuple
 
-# YOUR CODE HERE
+## Understand
+# I need a function that prints each value in a tuple, one per line
+## Plan
+# I need to know how to write a function in python
+# How should I extract those values?
+## Execute
+
+def print_tuple(tuple_value):
+    # Another way to do it
+    # for i in range(len(tuple_value)):
+    #     print(tuple_value[i])
+    for j in tuple_value:
+        print(j)
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
 print_tuple(u)
