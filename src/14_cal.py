@@ -37,10 +37,16 @@ def print_calendar(*argv):
     print(calendar.month(now.year, now.month))
   elif len(sys.argv) == 2:
     month = sys.argv[1]
+    if int(month) <= 0 or int(month) > 12:
+      print("Error: Invalid month, must be 1-12")
     print(calendar.month(now.year, int(month)))
   elif len(sys.argv) == 3:
     month = sys.argv[1]
+    if int(month) <= 0 or int(month) > 12:
+      print("Error: Invalid month, must be 1-12")
     year = sys.argv[2]
     print(calendar.month(int(year), int(month)))
+  else:
+    print("Error: should be format py 14_cal.py [month] [year]")
 
 print_calendar()
